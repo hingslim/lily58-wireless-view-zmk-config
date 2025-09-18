@@ -13,7 +13,7 @@
         compatible = "zmk,combos";
 
         third_layer {
-            bindings = <&tog 3>;
+            bindings = <&tog 0>;
             key-positions = <52 55>;
         };
     };
@@ -81,7 +81,15 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        extra_1 { status = "reserved"; >; };
+        layer_num {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp DOLLAR   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp PERCENT  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans       &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp DOT          &kp KP_SUBTRACT  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans       &trans           &trans
+            >;
+        };
 
         extra_2 { status = "reserved"; };
 
