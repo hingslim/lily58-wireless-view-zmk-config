@@ -13,7 +13,7 @@
         compatible = "zmk,combos";
 
         third_layer {
-            bindings = <&tog 0>;
+            bindings = <&tog 3>;
             key-positions = <52 55>;
         };
     };
