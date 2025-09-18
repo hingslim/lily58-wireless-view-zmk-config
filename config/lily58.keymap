@@ -84,6 +84,7 @@
         extra_1 { 
             bindings = 
                 &trans &trans &trans &trans &trans &trans
+            >;
         };
 
         extra_2 { status = "reserved"; };
